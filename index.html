@@ -84,19 +84,19 @@
         <section class="sales container">
             <h2 class="visually-hidden">sales</h2>
             <ul class="sales__list">
-                <li class="sales__item sales__item--wooman">
+                <li class="sales__item sales__item-wooman">
                     <h3 class="sales__item-text">30% off</h3>
                     <p class="sales__item-title">for women</p>
                 </li>
-                <li class="sales__item sales__item--man">
+                <li class="sales__item sales__item-man">
                     <h3 class="sales__item-text">hot deal</h3>
                     <p class="sales__item-title">for men</p>
                 </li>
-                <li class="sales__item sales__item--kids">
+                <li class="sales__item sales__item-kids">
                     <h3 class="sales__item-text">new arrivals</h3>
                     <p class="sales__item-title">for kids</p>
                 </li>
-                <li class="sales__item sales__item--accesories">
+                <li class="sales__item sales__item-accesories">
                     <h3 class="sales__item-text">luxirous & trendy</h3>
                     <p class="sales__item-title">accessories</p>
                 </li>
@@ -177,26 +177,30 @@
                 <a class="bottom__products" href="#">Browse All Product</a>
             </div>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <img src="img/delivery.svg" alt="delivery">
-                    <h3>Free Delivery</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+        <section class="aside">
+            <h2 class="visually-hidden">aside</h2>
+            <ul class="aside__list">
+                <li class="aside__item aside__item-delivery">
+                    <img class="aside__item-img" src="img/delivery.svg" alt="delivery">
+                    <h3 class="aside__item-title">Free Delivery</h3>
+                    <p class="aside__item-subtitle">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov tion with extensive
                         models.
                     </p>
                 </li>
-                <li>
-                    <img src="img/sales.svg" alt="sales">
-                    <h3>Sales & discounts</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                <li class="aside__item aside__item-discounts">
+                    <img class="aside__item-img" src="img/sales.svg" alt="sales">
+                    <h3 class="aside__item-title">Sales & discounts</h3>
+                    <p class="aside__item-subtitle">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov tion with extensive
                         models.
                     </p>
                 </li>
-                <li>
-                    <img src="img/quality.svg" alt="quality">
-                    <h3>Quality assurance</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                <li class="aside__item aside__item-quality">
+                    <img class="aside__item-img" src="img/quality.svg" alt="quality">
+                    <h3 class="aside__item-title">Quality assurance</h3>
+                    <p class="aside__item-subtitle">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov tion with extensive
                         models.
                     </p>
                 </li>
@@ -204,33 +208,47 @@
         </section>
     </main>
     <footer>
-        <img src="img/support.png" alt="support">
-        <blockquote>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</blockquote>
-        <h2><span>subscribe</span>for our newletter and promotion</h2>
-        <div>
-            <form action="#">
-                <input type="email" placeholder="Enter Your Email">
-                <input type="submit" value="Subscribe">
-            </form>
+        <div class="footer">
+            <img class="footer-bkg" src="img/subscribe.jpg" alt="subscribe">
+            <div class="footer__wrp">
+                <img src="img/support.png" alt="support">
+                <blockquote class="footer__wrp-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                        class="italic">a pulvinar
+                        purus condimentum“</span>
+                </blockquote>
+            </div>
+            <div class="contacts">
+                <h2 class="contacts__title"><span class="contacts__title-text">subscribe</span>for our newletter and
+                    promotion</h2>
+                <form action="#">
+                    <div class="input">
+                        <label for="email" class="visually-hidden">email</label>
+                        <input class="email" type="email" id="email" placeholder="Enter Your Email">
+                        <button class="btn" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <p>&copy; 2021 Brand All Rights Reserved.</p>
-        <ul>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/facebook.svg"
-                        alt="facebook"></a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/instagram.svg"
-                        alt="instagram"></a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/p.svg" alt="p"></a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/twitter.svg"
-                        alt="twitter"></a>
-            </li>
-        </ul>
+        <div class="social">
+            <p class="social__text">&copy; 2021 Brand All Rights Reserved.</p>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/facebook.svg"
+                            alt="facebook"></a>
+                </li>
+                <li class="social__item">
+                    <a class="" href="http://" target="_blank" rel="noopener noreferrer"><img src="img/instagram.svg"
+                            alt="instagram"></a>
+                </li>
+                <li class="social__item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/p.svg" alt="p"></a>
+                </li>
+                <li class="social__item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/twitter.svg"
+                            alt="twitter"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 

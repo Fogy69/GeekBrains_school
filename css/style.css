@@ -1,8 +1,10 @@
 :root {
     --black: #222222;
+    --black2-bkg: #222224;
     --pink-bkg: #F1E4E6;
     --pink-color: #F16D7F;
     --white-color: #FFFFFF;
+    --white2-color: #FBFBFB;
     --grey-color: #F8F8F8;
     --grey2-color: #9F9F9F;
     --grey3-color: #5D5D5D;
@@ -33,7 +35,7 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 .header__nav {
     display: none;
@@ -79,6 +81,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 0 0 92px;
+    
 }
 
 .brand__title {
@@ -86,10 +89,20 @@ body {
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    display: grid;
+}
+
+.brand__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
 }
 
 .brand__subtitle-pink {
     color: var(--pink-color);
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
 }
 
 .sales {
@@ -112,19 +125,19 @@ body {
     flex-direction: column;
 }   
 
-.sales__item--wooman {
+.sales__item-wooman {
     background-image: url(../img/sales-wooman.png);
 }
 
-.sales__item--man {
+.sales__item-man {
     background-image: url(../img/sales-man.png);
 }
 
-.sales__item--kids {
+.sales__item-kids {
     background-image: url(../img/sales-kids.png);
 }
 
-.sales__item--accesories {
+.sales__item-accesories {
     background-image: url(../img/sales-accesories.png);
     width: 100%;
     margin: 30px 0 0 0;
@@ -173,7 +186,7 @@ body {
     flex-wrap: wrap;
     padding: 57px 0 0 0;
 }
- .products__item {
+.products__item {
     width: 360px;
     min-height: 260px;
     display: flex;
@@ -182,9 +195,9 @@ body {
     flex-direction: column;
     background: var(--grey-color);
     margin: 0 0 30px 0;
- }
+}
 
- .products__item-wrp {
+.products__item-wrp {
     padding: 0 29px 0 17px;
     text-align: left;
 }
@@ -201,7 +214,6 @@ body {
     line-height: 17px;
     color: var(--grey3-color);
     opacity: 0.5;
-
 }
 
 .products__item-price {
@@ -225,3 +237,137 @@ body {
     padding: 14px 38px;
 }
 
+.aside {
+    padding: 109px 0 0 0;
+}
+
+.aside__list { 
+    display: flex;
+    background: #222224;
+    color: var(--white2-color);
+    padding: 0 230px 0 230px;
+}
+
+.aside__item {
+    align-items: center;
+    text-align: center;
+}
+
+.aside__item-img {
+    padding: 103px 0 25px 0;
+}
+
+.aside__item-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 0 25px 0;
+}
+
+.aside__item-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    opacity: 0.8;
+    padding: 0 0 104px 0;
+    max-width: 360px;
+}
+
+.aside__item:nth-child(2) {
+    padding: 0 30px 0 30px;
+}
+
+/* .aside__item-img:nth-child(2) {
+    padding: -50px 0 0 0;
+} */
+ 
+.footer {
+    display: flex;
+    /* justify-content: space-around;
+    text-align: center; */
+}
+
+.footer-bkg {
+    position: relative;
+}
+ 
+.footer__wrp {
+    /* justify-content: space-around; */
+    text-align: center;
+    padding: 87px 327px 126px 230px;
+    position: absolute;
+}
+
+.footer__wrp-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px; 
+    max-width: 360px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.contacts {
+    position: absolute;
+    transform: translate(1100px, 200px);
+
+}
+
+.contacts__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    display: grid;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacts__title-text{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.input {
+    display: flex;
+}
+
+.email {
+
+}
+
+.btn {
+    background: #F16D7F;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 233px;
+    background: var(--black2-bkg);
+}
+
+.social__list {
+    display: flex;
+}
+ 
+.social__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: var(--white2-color);
+}
+
+.social__item:nth-child(2) {
+    padding: 0 7px 0 7px;
+}
+
+.social__item:last-child {
+    padding: 0 0 0 7px;
+}
