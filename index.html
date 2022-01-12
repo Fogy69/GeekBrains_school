@@ -38,39 +38,41 @@
             </div>
         </div>
         <nav class="header__nav">
-            <h2 class="header__nav-title ">menu</h2>
-            <ul class="header__nav-list">
-                <li class="header__nav-item nav-sub-item">
-                    <a class="nav-sub-item__link" href="#">man</a>
-                    <ul class="nav-sub-item__list">
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Bags</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Denim</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>T-Shirts</li>
-                    </ul>
-                </li>
-                <li class="header__nav-item nav-sub-item">
-                    <a class="nav-sub-item__link" href="#">woman</a>
-                    <ul class="nav-sub-item__list">
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Jackets & Coats</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Polos</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>T-Shirts</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Shirts</li>
-                    </ul>
-                </li>
-                <li class="header__nav-item nav-sub-item">
-                    <a class="nav-sub-item__link" href="#">kids</a>
-                    <ul class="nav-sub-item__list">
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Bags</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Denim</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>T-Shirts</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>Shirts</li>
-                        <li class="nav-sub-item__link"><a href="#"></a>bags</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="header__nav-wrapper">
+                <h2 class="header__nav-title">menu</h2>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item nav-sub-item">
+                        <a class="nav-sub-item__link link link-pink" href="#">man</a>
+                        <ul class="nav-sub-item__list">
+                            <li class="nav-sub-item__link"><a class="link" href="#">Accessories</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Bags</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Denim</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item nav-sub-item">
+                        <a class="nav-sub-item__link link link-pink" href="#">woman</a>
+                        <ul class="nav-sub-item__list">
+                            <li class="nav-sub-item__link"><a class="link" href="#">Accessories</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Jackets & Coats</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Polos</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">T-Shirts</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item nav-sub-item">
+                        <a class="nav-sub-item__link link link-pink" href="#">kids</a>
+                        <ul class="nav-sub-item__list">
+                            <li class="nav-sub-item__link"><a class="link" href="#">Accessories</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Jackets & Coats</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Polos</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">T-Shirts</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Shirts</a></li>
+                            <li class="nav-sub-item__link"><a class="link" href="#">Bags</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -173,13 +175,13 @@
                     </div>
                 </li>
             </ul>
-            <div class="bottom__products-wrp">
-                <a class="bottom__products" href="#">Browse All Product</a>
+            <div class="products__bottom">
+                <a class="products__bottom-link" href="#">Browse All Product</a>
             </div>
         </section>
         <section class="aside">
             <h2 class="visually-hidden">aside</h2>
-            <ul class="aside__list">
+            <ul class="aside__list container">
                 <li class="aside__item aside__item-delivery">
                     <img class="aside__item-img" src="img/delivery.svg" alt="delivery">
                     <h3 class="aside__item-title">Free Delivery</h3>
@@ -209,41 +211,44 @@
     </main>
     <footer>
         <div class="footer">
-            <img class="footer-bkg" src="img/subscribe.jpg" alt="subscribe">
-            <div class="footer__wrp">
-                <img src="img/support.png" alt="support">
-                <blockquote class="footer__wrp-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
-                        class="italic">a pulvinar
-                        purus condimentum“</span>
-                </blockquote>
-            </div>
-            <div class="contacts">
-                <h2 class="contacts__title"><span class="contacts__title-text">subscribe</span>for our newletter and
-                    promotion</h2>
-                <form action="#">
-                    <div class="input">
-                        <label for="email" class="visually-hidden">email</label>
-                        <input class="email" type="email" id="email" placeholder="Enter Your Email">
-                        <button class="btn" type="submit">Subscribe</button>
-                    </div>
-                </form>
+            <div class="footer__wrapper container">
+                <div class="footer__comments">
+                    <img src="img/support.png" alt="support">
+                    <blockquote class="footer__comments-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        <span class="footer__comments-text-italic">a pulvinar
+                            purus condimentum“</span>
+                    </blockquote>
+                </div>
+                <div class="footer__contacts">
+                    <h2 class="footer__contacts-title"><span class="footer__contacts-title-text">subscribe</span>for our
+                        newletter
+                        and
+                        promotion</h2>
+                    <form action="#">
+                        <div class="footer__input">
+                            <label for="email" class="visually-hidden">email</label>
+                            <input class="footer__input-email" type="email" id="email" placeholder="Enter Your Email">
+                            <button class="footer__input-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="social">
-            <p class="social__text">&copy; 2021 Brand All Rights Reserved.</p>
-            <ul class="social__list">
-                <li class="social__item">
+        <div class="footer__socials container">
+            <p class="footer__socials-text">&copy; 2021 Brand All Rights Reserved.</p>
+            <ul class="footer__socials-list">
+                <li class="footer__socials-item">
                     <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/facebook.svg"
                             alt="facebook"></a>
                 </li>
-                <li class="social__item">
-                    <a class="" href="http://" target="_blank" rel="noopener noreferrer"><img src="img/instagram.svg"
+                <li class="footer__socials-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/instagram.svg"
                             alt="instagram"></a>
                 </li>
-                <li class="social__item">
+                <li class="footer__socials-item">
                     <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/p.svg" alt="p"></a>
                 </li>
-                <li class="social__item">
+                <li class="footer__socials-item">
                     <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/twitter.svg"
                             alt="twitter"></a>
                 </li>
