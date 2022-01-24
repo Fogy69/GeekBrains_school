@@ -1,0 +1,125 @@
+.products {
+    text-align: center;
+    padding: 97px 0 0 0;
+
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        padding: 0 0 6px 0;
+    }
+
+    &__subtitle {
+        @include font;
+        opacity: 0.5;
+        color: $grey2-color;
+    }
+
+    &__list {
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 57px 0 0 0;
+    }
+
+    &__item {
+        @include flex-center;
+        width: 360px;
+        min-height: 260px;
+        flex-direction: column;
+        background: $grey-color;
+        margin: 0 0 30px 0;
+    }
+
+    &__item-wrapper {
+        position: relative;
+    }
+
+    &__item-overlay {
+        width: 100%;
+        min-height: 420px;
+        background: $black4-bkg1;
+        position: absolute;
+        top: 0;
+    }
+
+    &__list-btn {
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+        border: 1px solid $white-color;
+        padding: 12px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        min-width: 144px;
+        color: $white-color;
+    }
+  
+    &__item-overlay,
+    &__list-btn {
+        display: none;
+    }
+
+    &__item:hover &__list-btn,
+    &__item:hover &__item-overlay {
+        display: flex;
+        cursor: pointer;
+    } 
+
+    &__list-btn:active {
+        opacity: 0.7;
+    }
+
+    &__item-wrp {
+        padding: 0 29px 0 17px;
+        text-align: left;
+    }
+
+    &__item-title {
+        padding: 25px 0 13px 0;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    &__item-subtitle {
+        @include font;
+        color: $grey3-color;
+        opacity: 0.5;
+    }
+
+    &__item-price {
+        padding: 18px 0 20px 0; 
+        font-size: 16px;
+        line-height: 19px;
+        color: $pink-color;   
+    }
+
+    &__bottom {
+        margin: 32px 0 109px 0;
+    }
+
+    &__bottom-link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $red-color;
+        border: 1px solid $red2-color;
+        text-decoration: none;
+        padding: 14px 38px;
+    }
+
+    &__bottom-link:hover,
+    &__bottom-link:focus {
+        opacity: 0.5;
+        cursor: pointer;
+        background: $red-red-bkg;
+        color: $white-color;
+    }
+  
+    &__bottom-link:active {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,36 @@
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 233px;
+    background: $black2-bkg;
+
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: $white2-color;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:nth-child(2) {
+        padding: 0 7px 0 7px;
+    }
+
+    &__item:last-child {
+        padding: 0 0 0 7px;
+    }
+
+    &__item:hover,
+    &__item:focus {
+        opacity: 0.7;
+    }
+
+    &__item:active {
+        opacity: 0.2;
+    }
+}

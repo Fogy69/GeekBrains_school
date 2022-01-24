@@ -1,0 +1,94 @@
+.footer {
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1600px;
+    max-height: 448px;
+
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__comments {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        padding: 86px 0 126px 0;
+    }
+
+    &__comments-text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px; 
+        max-width: 360px;
+        padding: 32px 0 0 0;
+    }
+
+    &__comments-text-italic {
+        font-style: italic;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0 156px 0;
+    }
+
+    &__contacts-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        display: grid;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 0 32px 0;
+    }
+
+    &__contacts-title-text{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+
+    &__input {
+        display: flex;
+    }
+
+    &__input-email {
+        @include font ($font-weight: 400);
+        text-align: left;
+        color: $black2-bkg;
+        border: none;
+        background-color: $grey4-bkg;
+        padding: 7px 0 6px 22px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        min-width: 250px;
+    }
+
+    &__input-btn {
+        @include font ($font-weight: 400);
+        background: $pink-color;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border: none;
+        width: 100px;
+        height: 49px;
+        color: $white-color;
+    }   
+
+    &__input-btn:hover,
+    &__input-btn:focus {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+  
+    &__input-btn:active {
+        background: $red-red-bkg;
+    }  
+} 

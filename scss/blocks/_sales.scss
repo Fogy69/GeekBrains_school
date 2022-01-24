@@ -1,0 +1,57 @@
+.sales {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        padding: 64px 0 0 0;
+    }
+
+    &__item {
+        width: 360px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }   
+
+    &__item-wooman {
+        background-image: url(../img/sales-wooman.png);
+    }
+
+    &__item-man {
+        background-image: url(../img/sales-man.png);
+    }
+
+    &__item-kids {
+        background-image: url(../img/sales-kids.png);
+    }
+
+    &__item-accesories {
+        background-image: url(../img/sales-accesories.png);
+        width: 100%;
+        margin: 30px 0 0 0;
+        min-height: 180px;
+        background-repeat: no-repeat;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: $pink-color;
+        text-transform: uppercase;
+    }
+}
