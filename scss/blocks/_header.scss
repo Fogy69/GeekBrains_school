@@ -1,0 +1,181 @@
+.header { 
+    background-color: $black;
+    max-height: 75px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+
+    &__link {
+        margin: 0 0 0 33px;
+        border: $black;
+    }
+
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+        position: relative;
+    }
+
+    &__logo-form-wrp {
+        display: flex;
+    }
+
+    [type="search"] {
+        padding: 14px 24px 14px 60px;
+        border: none;
+        background: none;
+        color: $white-color;
+        min-width: 250px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        opacity: 0.01;
+        
+    }
+      
+    .form {
+        position: relative;
+        margin: 0 0 0 41px;
+    }
+      
+    [type="search"]:hover, 
+    [type="search"]:focus {
+        outline: 2px solid $white-color;
+        cursor: pointer;  
+        opacity: 0.6;  
+    }
+      
+    .form:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: none;
+        top: 5px;
+        left: 5px;
+        background-image: url(/img/loupe.svg);
+        background-size: 35px 35px;
+    }
+     
+    .header-2 {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__menu-btn {
+        background-color: transparent;
+        border: none;   
+    }
+
+    &__menu-btn:hover,
+    &__menu-btn:focus {
+        outline: 2px solid $white-color;
+        border-top-left-radius: 7px;    
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        padding: 10px 6px 6px 6px;
+        opacity: 0.6;
+        cursor: pointer; 
+    }
+
+    &__menu-btn:active {
+        opacity: 0.7;
+    }
+
+    &__menu-btn:hover +.header__nav,
+    &__menu-btn:focus +.header__nav {
+        display: block;
+    }
+
+    &__link {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        outline: 2px solid $white-color;
+        border-top-left-radius: 7px;    
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        display: inline-block;
+        padding: 6px;
+        opacity: 0.6;
+        cursor: pointer;
+    }   
+
+    &__link:active {
+        opacity: 0.7;
+    }
+
+    &__nav {
+        margin: 15px 0 0 0;
+        position: absolute;
+        display: none;
+        right: 3.3%;
+    }
+
+    &__nav:hover {
+        display: block;
+    }
+
+    &__nav-wrapper {
+        background-color: $white-color;
+        width: 227px;
+        height: 764px;
+        box-shadow:  0px 20px 14px -10px $black3-box-sadow; 
+        position: absolute;
+    }
+
+    &__nav-title {
+        text-transform: uppercase;
+        padding: 30px 90px 4px 34px;
+    }
+
+    &__nav-list {
+        padding: 0 73px 157px 33px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+.nav-sub-item {
+    display: grid;
+
+
+    &__link {
+        @include font($font-weight: 400);
+        padding: 11px 0 0 0;
+    }
+
+    &__list { 
+        padding: 0 0 0 24px;
+    }
+}
+
+.link {
+    color: $grey4-color;
+}
+  
+.link:hover,
+.link:focus {
+    color: $green-hover;
+    cursor: pointer;
+}
+  
+.link:active {
+    color: $black;
+}
+
+.link-pink {
+    color: $pink-color;
+    text-transform: uppercase;
+    padding: 20px 0 12px 0;
+}
+}
