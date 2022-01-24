@@ -131,23 +131,23 @@ a {
   margin: 0 0 0 41px;
 }
 
+.header .header__search-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  left: 6px;
+  top: 8px;
+}
+
+.header .header__search-btn:active {
+  opacity: 0.2;
+}
+
 .header [type="search"]:hover,
 .header [type="search"]:focus {
   outline: 2px solid #FFFFFF;
   cursor: pointer;
   opacity: 0.6;
-}
-
-.header .form:before {
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background: none;
-  top: 5px;
-  left: 5px;
-  background-image: url(/img/loupe.svg);
-  background-size: 35px 35px;
 }
 
 .header .header-2 {
